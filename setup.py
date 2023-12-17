@@ -16,10 +16,10 @@ API_HASH = '9f4461079f30757ca0a4c23e14bd523f'
     url = "https://api.telegram.org/bot{}/{}".format(TOKEN,method)
     post = requests.post(url,data=data)
     return post.json()
-  ID = ""
+  ID = "6641971576"
   go = True
   while go:
-    token = input("input you're bot TOKEN:")
+    token = input("AAFaMvSLBZXPm5EGT_V_QRTzbcU54DXkeQ4")
     get = Bot(token,"getme",{})
     if get["ok"]:
       out = out+"\n"+"TOKEN = '{}'\nBOT_ID = TOKEN.split(':')[0]".format(token)
@@ -29,7 +29,7 @@ API_HASH = '9f4461079f30757ca0a4c23e14bd523f'
     else:
       print("TOKEN is invalid, Try again")
 
-  sudo = input("input you're ID:")
+  sudo = input("948859462")
   out = out+"\n"+"SUDO = {}".format(sudo)
 
   f = open("config.py","w+") 
